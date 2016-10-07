@@ -1,0 +1,265 @@
+<!DOCTYPE> 
+<html>
+	<head>
+		<title>Casper's HTML Guide</title>
+		<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+<style>
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:#262626;
+}
+.header-top {
+    font-family: monospace;
+    margin: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    clear:both;
+    background-color: #9d1919;
+    height: 90px;
+    color:white;
+}
+.header-top h1, .header-top a {
+    font-size: 46px;
+    margin:0px;
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+}
+.header-top p {
+    margin: 0px;
+    padding: 0px;
+}
+.header-top a:hover {
+    color: #ccc;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}  
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0px 3px 8px 0px black;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+
+ul.topnav li.icon {display: none;}
+            
+@media screen and (min-width:320px) and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}        
+    
+    
+    .body {
+        margin-top: 30px;
+        margin-left:100px;
+        margin-bottom: 30px;
+    }
+    .body h3 {
+        color: white;
+        font-size: 32px;
+        padding: 10px 0px 0px 10px;
+        margin-bottom: 5px;
+        font-family: monospace;
+    }
+    .body p {
+        color: white;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: monospace;
+    }
+    .body article {
+        background-color: #9d1919;
+        width:90%;
+        box-shadow:0px 3px 10px 0px black;
+        line-height: 20px;
+    }
+    .body article li {
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        font-family: monospace;
+    }
+    .body article p a {
+        color: darkgray;
+    }
+    .body article xmp {
+        background-color: #841515;
+        color:#ccc;
+    }
+    .body article h1 {
+        color: white;
+        margin-left: 10px;
+        font-family: monospace;
+        margin-bottom: 5px;
+        padding: 0px;
+    }
+    .body article .xmp {
+        background: #841515;
+        margin-bottom: 10px
+    }
+</style>
+        <script>
+            
+            
+            
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}    
+            
+    </script>
+	</head>
+	<header>
+		<div class="Header-top">
+            <h1 title="Are you stalking my webpage?"><a href="Index.html">Casper's Guide</a></h1>
+			<p>This is Casper's Guide, I will teach you how to code an ultimate website!</p>
+		</div>
+        <ul class="topnav" id="myTopnav">
+  <li><a href="Index.html">Home</a></li>
+  <li><a href="About.html">About Me</a></li>
+  <li><a href="css.html">Learn CSS</a></li>
+  <li><a href="Videos.html">Videos</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+    </header>
+    <body>
+        <div class="Body">
+            <article>
+                <h3>Basic HTML</h3>
+                <p>To make a HTML-page, you need to learn the basics. Making a HTML-page is not always easy, but that's why I'm teaching you this. Let's start with the &lt;html&gt; element. This container is the whole document, where you put your CSS, Javascript and all tags. Inside those you put the &lt;head&gt; element which is used to put all your metadata (data about data).</p>
+                <p>Now it should look like this:</p>
+                <xmp>
+                <html>
+                    <head>
+                    </head>
+                </html>
+                </xmp>
+                <p>Inside the &lt;head&gt; element, you put the &lt;title&gt; element. The &lt;title&gt; defines the title of the document.</p>
+                <li>defines a title in the browser tab.</li>
+                <li>provides a title for the page when it is added to favorites.</li>
+                <li>displays a title for the page in search engine results.</li>
+                <p>How the code should look now:</p>
+                <xmp>
+                <html>
+                    <head>
+                        <title>Casper's HTML Guide</title>
+                    </head>    
+                </html>
+                </xmp>
+                <p>And how the tab looks:</p>
+                <p><img src="Title%20Element2.PNG" /></p>
+                <p>Now we can add a favicon. A favicon is the samll picture next to the title on the browser tab. Just like on the picture above.</p>
+                <p>To make a favicon, we just paint something, I've made a picture with text saying CG (Casper's Guide). Then you can go to this <a href="http://www.favicon-generator.org/">link</a> and generate the favicon or search on the internet for more. When you have generated the favicon, you just follow the instructions on the site.</p>
+                <p>Now it should look like this:</p>
+                <xmp>
+                <html>
+                    <head>
+                        <title>Casper's HTML Guide</title>
+                        <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+                        <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+                        <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+                        <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+                        <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+                        <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+                        <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+                        <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+                        <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+                        <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+                        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+                        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+                        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+                        <link rel="manifest" href="/manifest.json">
+                        <meta name="msapplication-TileColor" content="#ffffff">
+                        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+                        <meta name="theme-color" content="#ffffff">
+                    </head>
+                </html>
+                </xmp>
+                <p>Okay. Now we're done with the &lt;head&gt; element - for now.</p>
+                <p>After the &lt;/head&gt; you make the &lt;body&gt; element. Inside this container you put the HTML tags. Something like this:</p>
+                <xmp>
+                    <body>
+                        <h1>This is a Header</h1>
+                        <p>This is a Paragraph</p>
+                    </body>
+                </xmp>
+                <p>They will show up on a website like this:</p>
+                <div class="xmp">
+                <h1 style="color:#fff;font-family:none;">This is a Header</h1>
+                <p style="color:#fff;font-family:none;">This is a Paragraph</p>
+                </div>
+                <p>A paragraph is a small text, like a description of something. A header is a bigger text, from the biggest (H1) to the smallest (H6)</p>
+                <p>With what I've told you now, you can make a simple website. All you need to do now, is to click 'Save as' and give it the name 'Index.html'.</p> 
+                <p style="padding-bottom:5px;">Go check more of the links to make a greater website. Click <a href="css.html">here</a> to check out some CSS.</p>
+            </article>
+        </div>
+        
+	</body>
+    
+</html>
